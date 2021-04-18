@@ -1,0 +1,52 @@
+
+/* css::tag selector */
+li{
+    color:orangered;
+    background-color: palegoldenrod;
+}
+/* css::id selector */
+/* id : unique value */
+#list_1{
+    color:blue;
+    background-color: pink;
+}
+#list_2{
+    color:lightsalmon;
+    background-color: black;
+}
+/* css::class selector */
+/* class : non-unique value */
+.list_title{
+    font-size: 30px
+}
+.list_content{
+    font-size: 20px
+}
+/* css::parent-child selector */
+/* how to use : <parent selector> <child selector> */
+/* white space : recursive*/
+/*greater than sign : just child */
+ul li{
+    text-decoration: line-through
+}
+ul>.list_title{
+    border:black 3px solid;
+}
+
+/* css:: font-size */
+/* px : pixel */
+ul #list_3{
+    font-size: 8px;
+}
+/* em : parent's size */
+ul #list_4{
+    font-size: 3em;
+}
+/* rem : HTML's size */
+ul #list_5{
+    font-size: 3rem;
+}
+
+
+
+/* EOF */
