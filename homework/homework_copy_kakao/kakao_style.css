@@ -78,6 +78,7 @@ div.left_top_menu {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    height: 100%;
     color: white;
     padding-top: 10px
 }

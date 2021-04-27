@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+.container {
+    display: grid;
+    min-width: 100%;
+    min-height: 100%;
+    /* grid-template:
+        ". . . header header header header" 10px
+        ". . . main . . ." 1fr
+        "footer . . . . . ." 10px
+        "footer footer footer footer footer footer footer" 10px
+        / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 40px 10% 95px 10px 30px 20px 30px 20px 30px 40% 30px 30px;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: stretch;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #222;
+}
+input:hover {
+    outline: none;
+    border: none;
+    box-shadow: none !important;
+}
+input:focus {
+    outline: none;
+}
+#header {
+    grid-row:1/2;
+    grid-column: 1/8;
+    margin: 5px;
+    justify-self: end;
+    align-self: center;
+}
+/* main logo */
+#main_logo {
+    grid-row: 3/4;
+    grid-column: 1/8;
+    justify-self: center;
+}
+#search_bar {
+    grid-row: 5/6;
+    grid-column: 1/8;
+    justify-self: center;
+    align-self: center;
+    border-color: lightgray;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: thin;
+}
+#search_bar:hover {
+    box-shadow: 0px 1px 10px 0px lightgray;
+}
+#dummy1 {
+    grid-row: 7/8;
+    grid-column: 1/8;
+    justify-self: center;
+}
+#dummy1 button {
+    padding : 10px;
+    background-color: #F8F9FA;
+}
+#dummy1 button:hover {
+    cursor: pointer;
+}
+#dummy2 {
+    grid-row: 9/10;
+    grid-column: 1/8;
+    justify-self: center;
+}
+button {
+    border: none;
+}
+#sign_in {
+    color: white;
+    background-color: #1768E4;
+    border-radius: 5px;
+}
+#gmail {
+    background-color: transparent;
+}
+#images {
+    background-color: transparent;
+}
+#footer_up {
+    padding: 5px;
+    padding-bottom: 10px;
+    align-self: center;
+    grid-row: 11/12;
+    grid-column: 1/8;
+    background-color: #F2F2F2;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-color: lightgray;
+    color: gray;
+}
+#footer_down {
+    padding: 5px;
+    align-self: center;
+    grid-row: 12/13;
+    grid-column: 1/8;
+    background-color: #F2F2F2;
+}
+#footer_down button {
+    color: gray;
+    background-color: transparent;
+}
